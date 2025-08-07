@@ -50,6 +50,8 @@ include(FeatureSummary)
 include(CheckFunctionExistsMayNeedLibrary)
 include(CheckNonblockingSocketSupport)
 
+cmake_policy(SET CMP0077 NEW)
+
 project(libssh2 C)
 
 function(libssh2_dumpvars)  # Dump all defined variables with their values
